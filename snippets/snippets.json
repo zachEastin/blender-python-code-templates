@@ -656,7 +656,7 @@
             "\t\t(\"RIGHT\", \"Right\", \"Not left\")",
             "\t]",
             "",
-            "\tmyEnumProperty = bpy.props.EnumProperty(name=\"Direction\", description=\"Just an example\", items=my_items, default='UP')",
+            "\tmyEnumProperty : bpy.props.EnumProperty(name=\"Direction\", description=\"Just an example\", items=my_items, default='UP')",
             "",
             "\t# Optional function for drawing the socket input value",
             "\tdef draw(self, context, layout, node, text):",
@@ -694,8 +694,8 @@
             "\t# These work just like custom properties in ID data blocks",
             "\t# Extensive information can be found under",
             "\t# http://wiki.blender.org/index.php/Doc:2.6/Manual/Extensions/Python/Properties",
-            "\tmyStringProperty = bpy.props.StringProperty()",
-            "\tmyFloatProperty = bpy.props.FloatProperty(default=3.1415926)",
+            "\tmyStringProperty : bpy.props.StringProperty()",
+            "\tmyFloatProperty : bpy.props.FloatProperty(default=3.1415926)",
             "",
             "\t# === Optional Functions ===",
             "\t# Initialization function, called when a new node is created.",
@@ -1154,7 +1154,7 @@
         ],
         "description": "Example of Template for file import operator, operator imports data from .txt to blender data"
     },
-    "template_opertator_mesh_add":{
+    "template_operator_mesh_add":{
         "prefix": "template operator",
         "body": [
             "import bpy",
@@ -1494,7 +1494,7 @@
             "\t# E.g. VGROUP_EMPTY = 1 << 0",
             "",
             "\t# Custom properties, saved with .blend file. E.g.",
-            "\t# use_filter_empty = bpy.props.BoolProperty(name=\"Filter Empty\", default=False, options=set(),",
+            "\t# use_filter_empty : bpy.props.BoolProperty(name=\"Filter Empty\", default=False, options=set(),",
             "\t#                                           description=\"Whether to filter empty vertex groups\")",
             "",
             "\t# Called for each drawn item.",
